@@ -46,7 +46,7 @@ public class QuickSortHighPivot{
     } // end intQuickSort
 
     private static int intPartition(int l[], int low, int high){
-        //the pivot value will be the leftmost value i.e. the highest index
+        //the pivot value will be the rightmost value i.e. the highest index
         // the argument on the first call to the quicksort method has to be n-1
         int pivot = l[high];
         
