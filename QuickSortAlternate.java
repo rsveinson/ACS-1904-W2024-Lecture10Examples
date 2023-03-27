@@ -79,8 +79,18 @@ public class QuickSortAlternate{
         //  i = j;
         //  j = i;
 
+        //System.out.println(l[i] + " " + l[j]);
+        
+        // swap the conventional way
         l[i] = l[j];
         l[j] = temp;
+        
+        // bit wise xor cooler
+        // l[i] = l[i] ^ l[j];
+        // l[j] = l[i] ^ l[j];
+        // l[i] = l[i] ^ l[j];
+        
+        // System.out.println(l[i] + " " + l[j]);
     } // end swap
 
     public static void printList(int[] l, int len){
