@@ -6,8 +6,8 @@ import java.util.Random;
 
 public class QuickSortHighPivot{
     public static void main(String[] args) {
-        final int MAX = 10;         // max size of the array
-        final int UPPER = 100;      // upper bound on the range of random numbers
+        final int MAX = 25;         // max size of the array
+        final int UPPER = 1000;      // upper bound on the range of random numbers
         
         // some variables and the array
         int[] list = new int[MAX];
