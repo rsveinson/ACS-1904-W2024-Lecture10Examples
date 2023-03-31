@@ -17,6 +17,11 @@ public class Quicksort
             
         // the pivot is chosen as the first element
         int pivot = a[start];
+        /* the preceding line places a copy of the
+         * value at the low index into pivot, this
+         * is key for this implementation of partitioning
+         */
+        
         // the list is partitioned into a 
         // left sublist and a right sublist.
         //   left  sublist has values <  pivot.
@@ -41,7 +46,7 @@ public class Quicksort
                 
             // move a value smaller than pivot 
             // to left of pivot.
-            a[left] = a[right];
+            a[left] = a[right];  
             left++;
             // search from the left for a value 
             //   larger than pivot.
