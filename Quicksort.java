@@ -46,8 +46,10 @@ public class Quicksort
                 
             // move a value smaller than pivot 
             // to left of pivot.
+            // a[left] is < pivot
+            //a[right] is the first value less than pivot found
             a[left] = a[right];  
-            left++;
+            left++;                 // move the left index pointer off the value less than pivot
             // search from the left for a value 
             //   larger than pivot.
             while (right > left && a[left] <= pivot){
