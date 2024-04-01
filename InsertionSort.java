@@ -1,8 +1,11 @@
 import java.util.Arrays;
 import javax.swing.*;
+import java.util.Random;
+
 public class InsertionSort
 {
     public static void main(String[] args){
+        int[] l = new int[15];
         int[] list = {5, 3, 2, 1, 14, 8, 5};
         
         System.out.println(Arrays.toString(list));
@@ -34,4 +37,19 @@ public class InsertionSort
         }
         
     }
+    
+    public static void loadList(int[] l){
+        Random rnd = new Random();
+        
+        for(int i = 0; i < l.length; i++){
+            l[i] = rnd.nextInt(15) + 1;
+        }// end for i
+    }// end load list
+    
+    public static void printList(int[] l){
+        
+        for(int i = 0; i < l.length; i++){
+            System.out.println(l[i]);
+        }// end for i
+    }// end load list
 }
