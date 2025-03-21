@@ -62,7 +62,7 @@ public class Quicksort
             //   to the right of the pivot. 
             a[right]=a[left];
             right--;
-        }
+        }// end left < right
         // the pivot is moved to a position 
         //   separating left and right.
         a[right]=pivot;

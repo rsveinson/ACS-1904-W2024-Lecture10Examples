@@ -39,7 +39,12 @@ public class SelectionSort
                 a[i] = a[iSmallest];
                 a[iSmallest] = temp;
             }
+            
+            /* the following is included to show how the
+             * sorted sub-list grows with each pass
+             */
             JOptionPane.showMessageDialog(null, Arrays.toString(a));
+            System.out.println(Arrays.toString(a));
             
         }// end for i
     }
